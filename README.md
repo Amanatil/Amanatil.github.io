@@ -1,1 +1,0 @@
-# Amanatil.github.io
