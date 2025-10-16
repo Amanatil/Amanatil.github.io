@@ -1,19 +1,15 @@
 ---
-title: "Call of the Wild: The Angler"
-subtitle: An open world game about finding the best fishing spots and most beautiful views, catching big fish, and getting to know the locals.
-date: 2024-01-05
-genre: Fishing, Multiplayer, Nature, Exploration, Adventure
+title: "Age of Wonders: Planetfall"
+subtitle: 
+date: 
+genre: 4X
 platform: PC, Xbox, PlayStation
-role: Technical Designer
+role: Content Design Intern
 responsibilities:
-  - Mission Design & Scripting
-  - System Design & Maintenance
-  - Progression & Onboarding
+  - bla bla
 status: Released
 technologies:
-  - Apex Engine
-  - Visual Scripting
-  - Jira
+  - bla bla
 featured_image: /assets/images/games/call-of-the-wild-the-angler/COTW The Angler Key Art Main.jpg
 tenure: January 2021 - October 2023
 links:

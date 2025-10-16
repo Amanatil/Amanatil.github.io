@@ -1,13 +1,13 @@
 ---
 layout: page
 title: About Me
-subtitle: Some text
+subtitle: 
 permalink: /about/
 ---
 
 ## Who I Am
 
-Some text
+bla bla
 
 ## My Approach
 
