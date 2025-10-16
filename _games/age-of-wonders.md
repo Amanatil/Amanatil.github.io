@@ -1,51 +1,49 @@
 ---
 title: "Age of Wonders: Planetfall"
-subtitle: 
-date: 
-genre: 4X
+subtitle: Reclaim Your Future By Exploring The Past
+date: 2025-10-16
+genre: 4X, Strategy, Turn-Based Strategy, Sci-fi
 platform: PC, Xbox, PlayStation
 role: Content Design Intern
 responsibilities:
-  - bla bla
+  - Content Design
+  - System Design
+  - Gameplay Design
 status: Released
 technologies:
-  - bla bla
-featured_image: /assets/images/games/call-of-the-wild-the-angler/COTW The Angler Key Art Main.jpg
-tenure: January 2021 - October 2023
+  - Triumph's inhouse engine
+  - SVN
+featured_image: /assets/images/games/age-of-wonders-planetfall/age-of-wonders-planetfall-splash.jpg
+tenure: October 2019 - August 2020
 links:
-  - title: Angler Homepage
-    url: https://cotwtheangler.com/
+  - title: Paradox's Planetfall Homepage
+    url: https://www.paradoxinteractive.com/games/age-of-wonders-planetfall/about
   - title: Steam
-    url: https://store.steampowered.com/app/1408610/Call_of_the_Wild_The_Angler/
+    url: https://store.steampowered.com/app/718850/Age_of_Wonders_Planetfall/
   - title: Xbox
-    url: https://www.xbox.com/en-us/games/store/call-of-the-wild-the-angler/9ndc5ljs839s
-  - title: Epic
-    url: https://store.epicgames.com/en-US/p/call-of-the-wild-the-angler
+    url: https://www.xbox.com/sv-se/games/store/age-of-wonders-planetfall/bptkrr85p0jw
+  - title: GOG
+    url: https://www.gog.com/en/game/age_of_wonders_planetfall
   - title: PlayStation
-    url: https://store.playstation.com/en-us/concept/10003945
+    url: https://store.playstation.com/en-se/product/EP4139-CUSA13236_00-AOWPLANETFALL000/
 screenshots:
-  - url: /assets/images/games/call-of-the-wild-the-angler/screenshot1.png
+  - url: /assets/images/games/age-of-wonders-planetfall/screenshot1.jpg
     caption: Some description
-  - url: /assets/images/games/call-of-the-wild-the-angler/screenshot2.png
+  - url: /assets/images/games/age-of-wonders-planetfall/screenshot2.png
     caption: Some description
-  - url: /assets/images/games/call-of-the-wild-the-angler/screenshot3.png
+  - url: /assets/images/games/age-of-wonders-planetfall/screenshot3.jpg
     caption: Some description
-excerpt: An open-world Fishing Adventure
+excerpt: Strategic Turn-Based Sci-Fi Combat
 ---
 
-My work on Call of the Wild: The Angler was quite varried. I worked on everything from gameplay design to tools implementation, with my main focus being on designing complex systems to support our gameplay needs. I also worked closely with data and analytics and was in close contact with our beta testing community. 
+I did my design internship at Triump Studios in Delft. Here I was responsible for designing and implementing gameplay content for DLC 2 (Invasions) and 3 (Star Kings). On the Invasions DLC I designed, wrote, and implemented World Events. On the Star Kings DLC I was helping the main designer with the design of the Galactic Empire. 
 
-My favourite part of working on the Angler - besides the amazing team - was working on the fish spawning system. With the open world maps being so big and often changing while in development we needed a sollution to spawn fish all around the world with minimal developer hand-placement. This turned into the Fish Spawning System that combines tons of data points from the world (Temperature, time of day, altitude, water depth, water spead, etc.) to infer things such as food, shade, and more. Matching this up with the information we have about the different types of fish, we could spawn the fish based on (semi) realistic behavior of where these species could be found in the real world. 
 
 ## Responsibilities
-  - Mission Design & Scripting
-  - System Design, Maintenance, and Implementation
-  - Progression & Onboarding
-  - Analaytics
-  - Working with the community
+  - Content Design and implementation
+  - Scripting
+  - Gameplay Design
 
 ## Dev Diaries
 Below you can find some links to developer diaries I wrote for the game.
-- [Fish Spawning](https://cotwtheangler.com/news/developer-diary-systemic-approach-spawning-fish) : Procedurally spawned fish and the system that powers it.
-- [Legendary Fish](https://cotwtheangler.com/news/developer-diary-legendary-fish) : How did we design the Big Boss Battle fish?
-- [Onboarding](https://cotwtheangler.com/news/developer-diary-new-approach-onboarding-progression): How we remade onboarding.
+- [World Events](https://forum.paradoxplaza.com/forum/threads/age-of-wonders-planetfall-dev-diary-61-world-events.1389687/) : How do they work?
