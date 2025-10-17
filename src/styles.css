@@ -58,6 +58,6 @@
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-game-primary to-game-secondary bg-clip-text text-transparent;
+    @apply pb-2 bg-gradient-to-r from-game-primary to-game-secondary bg-clip-text text-transparent;
   }
 }

@@ -51,9 +51,9 @@ layout: default
         {% if page.gallery %}
             <section class="mt-12">
                 <h2 class="text-2xl font-bold mb-6">Gallery</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {% for image in page.gallery %}
-                        <div class="aspect-video bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+                        <div class="aspect-portrait bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
                             <img src="{{ image.url | relative_url }}" alt="{{ image.caption }}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                         </div>
                     {% endfor %}
