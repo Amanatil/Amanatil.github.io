@@ -22,29 +22,19 @@ I'm currently looking for jobs based in Stockholm, Sweden or remote, though I'm 
 
 ## Skills & Technologies
 
-### Design Tools
-- A test
-- B
-- C 
+### Engines
+I have worked with the following engines professionally:
+- In-house Engines (Triumph, Avalanche)
+- Unity
 
-### Programming
-- A
-- B
-- C 
+I also have experience with:
+- Unreal Engine 4
+- Godot
 
-### Methodologies
-- A
-- B
-- C 
-
-## Experience
-
-### [Job Title] | [Company Name] | [Date - Period]
-- Led design for [Game Title], achieving [achievement]
-- Collaborated with ...
-- Implemented ...
+Whatever technology or tool, I learn quickly and am able to quickly adapt. 
 
 ## Education
+I studied Game Design and Production at Breda University of Applied Sciences from 2016 to 2020, where I graduated with Bachelor of Science. 
 
 
 *Interested in working together? [Get in touch!](/contact/)*

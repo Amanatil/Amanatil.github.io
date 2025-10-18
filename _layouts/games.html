@@ -18,14 +18,15 @@ layout: default
         <div class="flex flex-wrap gap-4 justify-center">
             <button class="filter-btn active" data-filter="all">All Games</button>
             <button class="filter-btn" data-filter="released">Released</button>
-            <button class="filter-btn" data-filter="development">In Development</button>
-            <button class="filter-btn" data-filter="prototype">Prototypes</button>
+            <button class="filter-btn" data-filter="cancelled">Cancelled</button>
+           <!--<button class="filter-btn" data-filter="prototype">Prototypes</button>-->
         </div>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="games-grid">
-        {% for game in site.games %}
-            <div class="game-item game-card" data-status="{{ game.status | downcase | replace: ' ', '-' }}">
+        {% assign latest_games = site.games | sort: 'date' | reverse | limit: 3 %}
+        {% for game in latest_games %}
+            <div class="game-card">
                 <a href="{{ game.url | relative_url }}" class="block relative">
                 {% if game.featured_image %}
                     <div class="aspect-video bg-gray-200 dark:bg-gray-700 rounded-t-xl overflow-hidden">

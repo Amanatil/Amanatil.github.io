@@ -1,7 +1,7 @@
 ---
 title: "Call of the Wild: The Angler"
 subtitle: An open world game about finding the best fishing spots and most beautiful views, catching big fish, and getting to know the locals.
-date: 2024-01-05
+date: 2023-01-05
 genre: Fishing, Multiplayer, Nature, Exploration, Adventure
 platform: PC, Xbox, PlayStation
 role: Technical Designer

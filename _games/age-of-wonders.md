@@ -1,7 +1,7 @@
 ---
 title: "Age of Wonders: Planetfall"
 subtitle: Reclaim Your Future By Exploring The Past
-date: 2025-10-16
+date: 2020-10-16
 genre: 4X, Strategy, Turn-Based Strategy, Sci-fi
 platform: PC, Xbox, PlayStation
 role: Content Design Intern
