@@ -17,7 +17,7 @@ gallery:
     caption: 
   - url: /assets/images/projects/prototypes/coldsquare1.png
     caption: "placeholder" 
-  - url: /assets/images/projects/prototypes/snake1.png
+  - url: /assets/images/projects/prototypes/snake.png
     caption: "placeholder"  
 gallery-special:
 special-gallery-name: 
