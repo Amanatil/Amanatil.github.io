@@ -30,9 +30,9 @@ layout: default
                         <h3 class="text-xl font-bold text-gray-900 dark:text-white">{{ game.title }}</h3>
                     </div>
                     
-                    {% if game.role %}
+                    {% if game.excerpt %}
                         <p class="text-sm text-gray-700 dark:text-gray-300 mb-2">
-                            <strong>Role:</strong> {{ game.role }}
+                            {{ game.excerpt }}
                         </p>
                     {% endif %}
                     
@@ -77,6 +77,31 @@ layout: default
             </div>
         {% endfor %}
     </div>
+</div>
+
+<div class="container mx-auto px-4 py-16">
+
+    <div class="text-xl text-gray-600 dark:text-gray-300  mx-auto">
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div>
+                <h1 class="text-2xl md:text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                    About
+                </h1>
+                I've been shooting since 2013. <br>
+                My primary focus used to be cosplay and portrait photography, but I have since expanded to street photography and small personal events - including my friends' wedding.  
+            </div>
+            <div>
+                <h1 class="text-2xl md:text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                    Equipment
+                </h1>
+                Camera: Sony A7III <br>
+                Lenses: Sigma 28-70mm 2.8f, Sony 85mm 1.8
+            </div>
+        </div>
+        
+
+    </p>
+  
 </div>
 
 <script>

@@ -9,7 +9,7 @@ responsibilities:
 
 status: 
 technologies:
-featured_image: /assets/images/photgraphy/cosplay/IMG_5409-Launcher.jpg
+featured_image: /assets/images/photgraphy/cosplay/IMG_1611.jpg
 gallery:
   - url: /assets/images/photgraphy/cosplay/IMG_1216.jpg
     caption: "placeholder" 
@@ -30,14 +30,12 @@ gallery:
 tenure: 
 links:
 screenshots:
-excerpt:
+excerpt: Photos taken with various cosplayers across Europe
 ---
 
-place holder
+I've been into cosplay ever since I visted my first anime convention in 2009. After taking my first photos with a DSLR I realized that I enjoyed taking photos even more than cosplaying - and so I've been shooting ever since. 
 
-## placeholder
-
-placeholder
+While I shot most photos before I moved to stockholm, I still shoot occasionally.
 
 ## Cosplayers
 From top left to bottom right:

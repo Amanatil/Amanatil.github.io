@@ -21,6 +21,17 @@ I'm most at home when I can collaborate with fellow creative people, bouncing id
 I'm currently looking for jobs based in Stockholm, Sweden or remote, though I'm willing to relocate for the right job.
 
 ## Skills & Technologies
+### Design
+I'm a game designer with broad intesterests, but my primary skills are in:
+- Systems Design
+- Technical Design
+- Scripting
+- Gameplay Design
+
+Secondarily:
+- Mission & Content Design
+- Data & Analytics (The use of it to improve gameplay)
+- UI / UX Mockup
 
 ### Engines
 I have worked with the following engines professionally:
@@ -32,6 +43,13 @@ I also have experience with:
 - Godot
 
 Whatever technology or tool, I learn quickly and am able to quickly adapt. 
+
+### Other tools
+- Google suite
+- Photoshop
+- Draw.io
+- Miro
+- Jira
 
 ## Education
 I studied Game Design and Production at Breda University of Applied Sciences from 2016 to 2020, where I graduated with Bachelor of Science. 

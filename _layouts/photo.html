@@ -8,9 +8,9 @@ layout: default
             <nav class="text-sm mb-4">
                 <a href="{{ '/' | relative_url }}" class="text-game-primary hover:text-game-secondary">Home</a>
                 <span class="mx-2 text-gray-400">/</span>
-                <a href="{{ '/games/' | relative_url }}" class="text-game-primary hover:text-game-secondary">Games</a>
+                <a href="{{ '/photography/' | relative_url }}" class="text-game-primary hover:text-game-secondary">Photography</a>
                 <span class="mx-2 text-gray-400">/</span>
-                <span class="text-gray-600 dark:text-gray-300">{{ page.title }}test</span>
+                <span class="text-gray-600 dark:text-gray-300">{{ page.title }}</span>
             </nav>
             
             <h1 class="text-4xl md:text-6xl font-bold text-gradient mb-6">{{ page.title }}</h1>
@@ -133,6 +133,17 @@ layout: default
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {% for image in page.gallery %}
                         <div class="aspect-portrait bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+                            <img src="{{ image.url | relative_url }}" alt="{{ image.caption }}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        </div>
+                    {% endfor %}
+                </div>
+            </section>
+        {% endif %}
+        {% if page.gallery-landscape %}
+            <section class="mt-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                    {% for image in page.gallery-landscape %}
+                        <div class="aspect-video bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
                             <img src="{{ image.url | relative_url }}" alt="{{ image.caption }}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
                         </div>
                     {% endfor %}
