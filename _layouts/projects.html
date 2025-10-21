@@ -25,6 +25,7 @@ layout: default
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+        
         {% for project in site.projects %}
             <div class="project-item game-card" data-categories="{{ project.categories | join: ' ' }}">
                 <a href="{{ project.url | relative_url }}">

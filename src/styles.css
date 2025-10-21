@@ -50,7 +50,7 @@
   }
   
   .section-heading {
-    @apply text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-game-primary to-game-secondary bg-clip-text text-transparent;
+    @apply pb-2 text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-game-primary to-game-secondary bg-clip-text text-transparent;
   }
   
   .hero-gradient {
@@ -58,6 +58,6 @@
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-game-primary to-game-secondary bg-clip-text text-transparent;
+    @apply pb-2 bg-gradient-to-r from-game-primary to-game-secondary bg-clip-text text-transparent;
   }
 }

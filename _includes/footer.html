@@ -1,17 +1,7 @@
 <footer class="bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
-    <div class="container mx-auto px-4 py-12">
+    <div class="container mx-auto px-4 py-8">
         <div class="grid md:grid-cols-4 gap-8">
             <!-- About -->
-            <div class="md:col-span-2">
-                <div class="flex items-center space-x-2 mb-4">
-                    <div class="w-8 h-8 bg-gradient-to-br from-game-primary to-game-secondary rounded-lg flex items-center justify-center">
-                        <span class="text-white font-bold text-sm">{{ site.title | slice: 0, 2 | upcase }}</span>
-                    </div>
-                    <span class="font-bold text-xl text-gray-900 dark:text-white">{{ site.title }}</span>
-                </div>
-                <p class="text-gray-600 dark:text-gray-300 mb-4 max-w-md">
-                    {{ site.description }}
-                </p>
                 <div class="flex space-x-4">
                     {% if site.github_username %}
                         <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-game-primary transition-colors">
@@ -34,32 +24,10 @@
                             </svg>
                         </a>
                     {% endif %}
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 max-w-md">
+                    &copy;{{ 'now' | date: "%Y" }} {{site.title}}
+                    </p>
                 </div>
-            </div>
-            
-            <!-- Quick Links -->
-            <div>
-                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Quick Links</h3>
-                <ul class="space-y-2 text-gray-600 dark:text-gray-300">
-                    <li><a href="{{ '/about/' | relative_url }}" class="hover:text-game-primary transition-colors">About Me</a></li>
-                    <li><a href="{{ '/projects/' | relative_url }}" class="hover:text-game-primary transition-colors">Projects</a></li>
-                    <li><a href="{{ '/games/' | relative_url }}" class="hover:text-game-primary transition-colors">Games</a></li>
-                    <li><a href="{{ '/blog/' | relative_url }}" class="hover:text-game-primary transition-colors">Blog</a></li>
-                </ul>
-            </div>
-            
-            <!-- Contact -->
-            <div>
-                <h3 class="font-bold text-gray-900 dark:text-white mb-4">Get In Touch</h3>
-                <ul class="space-y-2 text-gray-600 dark:text-gray-300">
-                    <li><a href="{{ '/contact/' | relative_url }}" class="hover:text-game-primary transition-colors">Contact Form</a></li>
-                    <li><a href="mailto:{{ site.email }}" class="hover:text-game-primary transition-colors">{{ site.email }}</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="border-t border-gray-200 dark:border-gray-700 mt-8 pt-8 text-center text-gray-600 dark:text-gray-300">
-            <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. Built with Jekyll and Tailwind CSS.</p>
         </div>
     </div>
 </footer>

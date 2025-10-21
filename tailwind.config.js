@@ -20,6 +20,7 @@ module.exports = {
         'game-accent': '#06b6d4',
         'game-dark': '#0f172a',
         'game-light': '#f8fafc',
+        'game-red': '#ff002bff',
       },
       fontFamily: {
         'display': ['Inter', 'sans-serif'],
@@ -41,6 +42,10 @@ module.exports = {
       }
     },
   },
+  safelist: [
+    'bg-red-500', 'bg-blue-500', 'bg-green-500', 'bg-yellow-500',
+    'bg-gray-100', 'bg-gray-200', 'bg-gray-900'
+  ],
   plugins: [
     require('@tailwindcss/typography'),
   ],

@@ -18,8 +18,42 @@ layout: default
             {% if page.subtitle %}
                 <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6">{{ page.subtitle }}</p>
             {% endif %}
-            
+			{% if page.featured_image %}
+                <div class="mb-8">
+                    <img src="{{ page.featured_image | relative_url }}" alt="{{ page.title }}" class="w-full rounded-xl shadow-2xl">
+                </div>
+            {% endif %}
+			
             <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div>
+				   {% if page.role %}
+                        <div class="mb-4">
+                            <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">Role</h3>
+                            <p class="text-lg">{{ page.role }}</p>
+                        </div>
+                    {% endif %}
+                    {% if page.responsibilities %}
+                        <div class="mb-4">
+                            <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-3">Responsibilities</h3>
+                                <ul class="list-disc list-outside pl-6 text-gray-700 dark:text-gray-300 space-y-1">
+                                {% for responsibility in page.responsibilities %}
+                                    <li>{{ responsibility }}</li>
+                                {% endfor %}
+                                </ul>
+                        </div>
+                    {% endif %}
+
+                    {% if page.tenure %}
+                        <div class="mb-4">
+                            <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">Tenure</h3>
+                            <p class="text-lg">{{ page.tenure }}</p>
+                        </div>
+                    {% endif %}
+					
+                    
+                   
+                </div>
+                
                 <div>
                     {% if page.genre %}
                         <div class="mb-4">
@@ -34,16 +68,7 @@ layout: default
                             <p class="text-lg">{{ page.platform }}</p>
                         </div>
                     {% endif %}
-                    
-                    {% if page.role %}
-                        <div class="mb-4">
-                            <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">Role</h3>
-                            <p class="text-lg">{{ page.role }}</p>
-                        </div>
-                    {% endif %}
-                </div>
-                
-                <div>
+
                     {% if page.team_size %}
                         <div class="mb-4">
                             <h3 class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">Team Size</h3>
@@ -65,6 +90,7 @@ layout: default
                                 {% if page.status == 'Released' %}bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200
                                 {% elsif page.status == 'In Development' %}bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200
                                 {% elsif page.status == 'Prototype' %}bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200
+                                {% elsif game.status == 'Cancelled' %}bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200
                                 {% else %}bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200{% endif %}">
                                 {{ page.status }}
                             </span>
@@ -94,11 +120,7 @@ layout: default
                 </div>
             {% endif %}
             
-            {% if page.featured_image %}
-                <div class="mb-8">
-                    <img src="{{ page.featured_image | relative_url }}" alt="{{ page.title }}" class="w-full rounded-xl shadow-2xl">
-                </div>
-            {% endif %}
+
         </header>
         
         <div class="prose prose-lg dark:prose-invert max-w-none">

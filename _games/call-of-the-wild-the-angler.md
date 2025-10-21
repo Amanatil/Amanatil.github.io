@@ -1,47 +1,55 @@
 ---
 title: "Call of the Wild: The Angler"
-subtitle: "Collaborative dungeon building and exploration"
-date: 2024-01-05
-genre: "Adventure, Casual, Simulation, Sports"
-platform: "PC, Mac, Web"
-role: "Technical Designer"
-team_size: "9000"
-development_time: "99 months"
-status: "Released"
-technologies: ["Some", "Tech", "Used"]
-featured_image: "/assets/images/games/call-of-the-wild-the-angler/COTW The Angler Key Art Main.jpg"
+subtitle: An open world game about finding the best fishing spots and most beautiful views, catching big fish, and getting to know the locals.
+date: 2023-01-05
+genre: Fishing, Multiplayer, Nature, Exploration, Adventure
+platform: PC, Xbox, PlayStation
+role: Technical Designer
+responsibilities:
+  - Mission Design & Scripting
+  - System Design & Maintenance
+  - Progression & Onboarding
+status: Released
+technologies:
+  - Apex Engine
+  - Visual Scripting
+  - Jira
+featured_image: /assets/images/games/call-of-the-wild-the-angler/COTW The Angler Key Art Main.jpg
+tenure: January 2021 - October 2023
 links:
-  - title: "Steam"
-    url: "https://store.steampowered.com/app/1408610/Call_of_the_Wild_The_Angler/"
+  - title: Angler Homepage
+    url: https://cotwtheangler.com/
+  - title: Steam
+    url: https://store.steampowered.com/app/1408610/Call_of_the_Wild_The_Angler/
+  - title: Xbox
+    url: https://www.xbox.com/en-us/games/store/call-of-the-wild-the-angler/9ndc5ljs839s
+  - title: Epic
+    url: https://store.epicgames.com/en-US/p/call-of-the-wild-the-angler
+  - title: PlayStation
+    url: https://store.playstation.com/en-us/concept/10003945
 screenshots:
-  - url: "/assets/images/games/call-of-the-wild-the-angler/COTW The Angler Key Art Main.jpg"
-    caption: "Some description"
-  - url: "/assets/images/games/call-of-the-wild-the-angler/COTW The Angler Key Art Main.jpg"
-    caption: "Some description"
-  - url: "/assets/images/games/call-of-the-wild-the-angler/COTW The Angler Key Art Main.jpg"
-    caption: "Some description"
-excerpt: "A game about ..."
+  - url: /assets/images/games/call-of-the-wild-the-angler/screenshot1.png
+    caption: Some description
+  - url: /assets/images/games/call-of-the-wild-the-angler/screenshot2.png
+    caption: Some description
+  - url: /assets/images/games/call-of-the-wild-the-angler/screenshot3.png
+    caption: Some description
+excerpt: An open-world Fishing Adventure
 ---
 
-# Call of the Wild: The Angler
+My work on Call of the Wild: The Angler was quite varried. I worked on everything from gameplay design to tools implementation, with my main focus being on designing complex systems to support our gameplay needs. I also worked closely with data and analytics and was in close contact with our beta testing community. 
 
-- Role: Technical Designer
-- Company: Avalanche Studios Group
-- Tenure: January 2021 - October 2023
-- Platforms: [Steam](https://store.steampowered.com/app/1408610/Call_of_the_Wild_The_Angler/), Xbox, PlayStation
+My favourite part of working on the Angler - besides the amazing team - was working on the fish spawning system. With the open world maps being so big and often changing while in development we needed a sollution to spawn fish all around the world with minimal developer hand-placement. This turned into the Fish Spawning System that combines tons of data points from the world (Temperature, time of day, altitude, water depth, water spead, etc.) to infer things such as food, shade, and more. Matching this up with the information we have about the different types of fish, we could spawn the fish based on (semi) realistic behavior of where these species could be found in the real world. 
 
 ## Responsibilities
-
-- Tools design
-- Systems design, maintenance implementation
-- Visual Scripting
-- Progression design
-- Mission Design
-
-For Avalanche Studios Group I worked on Call of the Wild: The Angler. I worked on everything from gameplay design to tools implementation, with my main focus being on designing complex systems to support our gameplay needs. I accomplished this by working closely with our programming team for more systemic improvements, and scripting tools for designers to use in content creation.
+  - Mission Design & Scripting
+  - System Design, Maintenance, and Implementation
+  - Progression & Onboarding
+  - Analaytics
+  - Working with the community
 
 ## Dev Diaries
-
+Below you can find some links to developer diaries I wrote for the game.
 - [Fish Spawning](https://cotwtheangler.com/news/developer-diary-systemic-approach-spawning-fish) : Procedurally spawned fish and the system that powers it.
 - [Legendary Fish](https://cotwtheangler.com/news/developer-diary-legendary-fish) : How did we design the Big Boss Battle fish?
 - [Onboarding](https://cotwtheangler.com/news/developer-diary-new-approach-onboarding-progression): How we remade onboarding.

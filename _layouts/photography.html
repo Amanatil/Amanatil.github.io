@@ -1,0 +1,144 @@
+---
+layout: default
+---
+
+<div class="container mx-auto px-4 py-16">
+    <header class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            {{ page.title }}
+        </h1>
+        {% if page.subtitle %}
+            <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                {{ page.subtitle }}
+            </p>
+        {% endif %}
+    </header>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="games-grid">
+        {% assign latest_games = site.photography | sort: 'date' | reverse | limit: 3 %}
+        {% for game in latest_games %}
+            <div class="game-card">
+                <a href="{{ game.url | relative_url }}" class="block relative">
+                {% if game.featured_image %}
+                    <div class="aspect-video bg-gray-200 dark:bg-gray-700 rounded-t-xl overflow-hidden">
+                        <img src="{{ game.featured_image | relative_url }}" alt="{{ game.title }}" class="w-full h-full object-cover">
+                    </div>
+                {% endif %}
+                <div class="game-card-overlay"></div>
+                <div class="p-6 relative z-10">
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">{{ game.title }}</h3>
+                    </div>
+                    
+                    {% if game.excerpt %}
+                        <p class="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                            {{ game.excerpt }}
+                        </p>
+                    {% endif %}
+                    
+                    {% if game.responsibilities %}
+                        <div class="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                            <strong>Responsibilities:</strong> 
+                            <ul class="list-disc list-outside pl-6 text-gray-700 dark:text-gray-300 space-y-1">
+                                {% for responsibility in game.responsibilities %}
+                                    <li>{{ responsibility }}</li>
+                                {% endfor %}
+                                </ul>
+                        </div>
+                    {% endif %}
+
+                    {% if game.tenure %}
+                        <p class="text-sm text-gray-700 dark:text-gray-300 mb-6">
+                            <strong>Tenure:</strong> {{ game.tenure }}
+                        </p>
+                    {% endif %}
+                    
+
+                    
+                    {% if game.technologies %}
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            {% for tech in game.technologies limit: 3 %}
+                                <span class="px-2 py-1 bg-game-secondary/10 text-game-secondary rounded text-xs">{{ tech }}</span>
+                            {% endfor %}
+                            {% if game.technologies.size > 3 %}
+                                <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded text-xs">+{{ game.technologies.size | minus: 3 }} more</span>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                    
+                    <div class="flex items-center justify-between">
+                        <a href="{{ game.url | relative_url }}" class="text-game-primary hover:text-game-secondary font-medium">
+                            Learn More →
+                        </a>
+                        
+                    </div>
+                </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="container mx-auto px-4 py-16">
+
+    <div class="text-xl text-gray-600 dark:text-gray-300  mx-auto">
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div>
+                <h1 class="text-2xl md:text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                    About
+                </h1>
+                I've been shooting since 2013. <br>
+                My primary focus used to be cosplay and portrait photography, but I have since expanded to street photography and small personal events - including my friends' wedding.  
+            </div>
+            <div>
+                <h1 class="text-2xl md:text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                    Equipment
+                </h1>
+                Camera: Sony A7III <br>
+                Lenses: Sigma 28-70mm 2.8f, Sony 85mm 1.8
+            </div>
+        </div>
+        
+
+    </p>
+  
+</div>
+
+<script>
+// Game filtering functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const gameItems = document.querySelectorAll('.game-item');
+    
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Update active button
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            const filter = btn.dataset.filter;
+            
+            // Filter games
+            gameItems.forEach(item => {
+                if (filter === 'all' || (filter === 'released' && item.dataset.status === 'released') || 
+                    (filter === 'development' && item.dataset.status === 'in-development') ||
+                    (filter === 'prototype' && item.dataset.status === 'prototype')) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+</script>
+
+<style>
+.filter-btn {
+    @apply px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:border-game-primary hover:text-game-primary transition-colors;
+}
+
+.filter-btn.active {
+    @apply bg-game-primary text-white border-game-primary;
+}
+</style>

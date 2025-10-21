@@ -1,6 +1,6 @@
 ---
 layout: games
 title: Games
-subtitle: Interactive experiences I've designed and developed
+subtitle: Professional work
 permalink: /games/
 ---

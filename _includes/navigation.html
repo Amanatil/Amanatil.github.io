@@ -12,10 +12,10 @@
             <!-- Desktop Navigation -->
             <div class="hidden md:flex items-center space-x-8">
                 <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
-                <a href="{{ '/about/' | relative_url }}" class="nav-link {% if page.url == '/about/' %}active{% endif %}">About</a>
-                <a href="{{ '/projects/' | relative_url }}" class="nav-link {% if page.url contains '/projects' %}active{% endif %}">Projects</a>
                 <a href="{{ '/games/' | relative_url }}" class="nav-link {% if page.url contains '/games' %}active{% endif %}">Games</a>
-                <a href="{{ '/blog/' | relative_url }}" class="nav-link {% if page.url contains '/blog' %}active{% endif %}">Blog</a>
+                <a href="{{ '/projects/' | relative_url }}" class="nav-link {% if page.url contains '/projects' %}active{% endif %}">Projects</a>
+                <a href="{{ '/photography/' | relative_url }}" class="nav-link {% if page.url contains '/photography' %}active{% endif %}">Photography</a>    
+                <a href="{{ '/about/' | relative_url }}" class="nav-link {% if page.url == '/about/' %}active{% endif %}">About</a>
                 <a href="{{ '/contact/' | relative_url }}" class="nav-link {% if page.url == '/contact/' %}active{% endif %}">Contact</a>
                 
                 <!-- Dark mode toggle -->
@@ -41,10 +41,10 @@
         <div id="mobile-menu" class="md:hidden hidden pb-4">
             <div class="flex flex-col space-y-2">
                 <a href="{{ '/' | relative_url }}" class="mobile-nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
-                <a href="{{ '/about/' | relative_url }}" class="mobile-nav-link {% if page.url == '/about/' %}active{% endif %}">About</a>
-                <a href="{{ '/projects/' | relative_url }}" class="mobile-nav-link {% if page.url contains '/projects' %}active{% endif %}">Projects</a>
                 <a href="{{ '/games/' | relative_url }}" class="mobile-nav-link {% if page.url contains '/games' %}active{% endif %}">Games</a>
-                <a href="{{ '/blog/' | relative_url }}" class="mobile-nav-link {% if page.url contains '/blog' %}active{% endif %}">Blog</a>
+                <a href="{{ '/projects/' | relative_url }}" class="mobile-nav-link {% if page.url contains '/projects' %}active{% endif %}">Projects</a>
+                <a href="{{ '/photography/' | relative_url }}" class="mobile-nav-link {% if page.url contains '/photgraphy' %}active{% endif %}">Photography</a>
+                <a href="{{ '/about/' | relative_url }}" class="mobile-nav-link {% if page.url == '/about/' %}active{% endif %}">About</a>
                 <a href="{{ '/contact/' | relative_url }}" class="mobile-nav-link {% if page.url == '/contact/' %}active{% endif %}">Contact</a>
             </div>
         </div>
