@@ -5,7 +5,7 @@ email: your.email@example.tld
  # A portfolio showcasing my game design projects, interactive experiences,
  # and creative journey in the gaming industry.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://amanatil.github.io" # the base hostname & protocol for your site
+url: "https://nathanvandenberg.nl" # the base hostname & protocol for your site
 #twitter_username: yourusername
 github_username: amanatil
 linkedin_username: nathan-van-den-berg-9616b7186
